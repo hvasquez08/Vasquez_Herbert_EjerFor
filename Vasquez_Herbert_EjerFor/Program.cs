@@ -61,6 +61,12 @@ switch (opcion)
         }
         break;
     case 8:
+        Console.WriteLine("//////");
+        for (int i = 0; i <= 50; i+=5)
+        {
+            Console.WriteLine($"Numero {i} ");
+            Console.WriteLine("");
+        }
         break;
     case 9:
         break;
