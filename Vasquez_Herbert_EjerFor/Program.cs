@@ -203,8 +203,24 @@ switch (opcion)
         }
         Console.WriteLine($"el numero menor es: {numeromenor}");
         break;
+
         case 20:
-            break;
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese la cantidad de numeros");
+        int cantidadnumero = int.Parse(Console.ReadLine());
+        int numerospositivos = 0;
+        Console.WriteLine("//////");
+        for (int i = 1; i <= cantidadnumero; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado > 0)
+            {
+                numerospositivos++;
+            }
+        }
+        Console.WriteLine($"la cantidad de numeros positivos son: : {numerospositivos}");
+        break;
         case 21:
             break;
         case 22:
