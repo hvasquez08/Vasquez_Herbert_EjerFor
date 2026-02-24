@@ -252,11 +252,23 @@ switch (opcion)
             double venta = double.Parse(Console.ReadLine());
             totalvendido += venta;
         }
-        Console.WriteLine($"la cantidad de numeros negativos son: : {totalvendido}");
+        Console.WriteLine($"la cantidad de venta sumada es : {totalvendido}");
         break;
-        case 23:
 
-            break;
+        case 23:
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese la cantidad de notas");
+        int cantidadnotas = int.Parse(Console.ReadLine());
+        double sumanotas = 0;
+        Console.WriteLine("//////");
+        for (int i = 1; i <= cantidadnotas; i++)
+        {
+            Console.WriteLine("Ingrese nota");
+            double notas = double.Parse(Console.ReadLine());
+            sumanotas += notas;
+        }
+        Console.WriteLine($"el promedio final es: {sumanotas/cantidadnotas}");
+        break;
         case 24:
             break;
         case 25:
