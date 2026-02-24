@@ -221,8 +221,24 @@ switch (opcion)
         }
         Console.WriteLine($"la cantidad de numeros positivos son: : {numerospositivos}");
         break;
+
         case 21:
-            break;
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese la cantidad de numeros");
+        int cantidadnumerooos = int.Parse(Console.ReadLine());
+        int numerosnegativos = 0;
+        Console.WriteLine("//////");
+        for (int i = 1; i <= cantidadnumerooos; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado < 0)
+            {
+                numerosnegativos++;
+            }
+        }
+        Console.WriteLine($"la cantidad de numeros negativos son: : {numerosnegativos}");
+        break;
         case 22:
             break;
         case 23:
