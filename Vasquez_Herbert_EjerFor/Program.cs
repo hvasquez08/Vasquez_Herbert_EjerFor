@@ -171,8 +171,21 @@ switch (opcion)
         }
         Console.WriteLine($"los numeros pares son: {numerosimpares}");
         break;
+
         case 18:
-            break;
+        Console.WriteLine("//////");
+        double numeromayor = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado > numeromayor)
+            {
+                numeromayor = numeroingresado;
+            }
+        }
+        Console.WriteLine($"el numero mayor es: {numeromayor}");
+        break;
         case 19:
             break;
         case 20:
