@@ -158,7 +158,19 @@ switch (opcion)
         Console.WriteLine($"los numeros mayores son {numerosmayores}");
         break;
         case 17:
-            break;
+        Console.WriteLine("//////");
+        int numerosimpares = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado % 2 == 0 )
+            {
+                numerosimpares++;
+            }
+        }
+        Console.WriteLine($"los numeros pares son: {numerosimpares}");
+        break;
         case 18:
             break;
         case 19:
