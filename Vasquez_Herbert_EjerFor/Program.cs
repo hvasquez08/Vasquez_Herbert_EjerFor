@@ -100,6 +100,14 @@ switch (opcion)
         }
         break;
     case 12:
+        Console.WriteLine("/////////");
+        Console.WriteLine("Ingrese un numero");
+        double numerroo_hasta = double.Parse(Console.ReadLine());
+        for (int i = 1; i <= numerroo_hasta; i++)
+        {
+            Console.WriteLine("");
+            Console.WriteLine(i );
+        }
         break;
     case 13:
         break;
