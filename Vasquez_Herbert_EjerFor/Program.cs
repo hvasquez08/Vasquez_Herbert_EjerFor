@@ -2,6 +2,7 @@
 Console.WriteLine("Bienvenido");
 Console.WriteLine("Favor de elegir el programa que desee ver :D");
 Console.WriteLine("Mostrar los números del 1 al 10.\r\nMostrar los números del 1 al 20 en la misma línea separados por espacio.\r\nMostrar los números del 10 al 1 en orden descendente.\r\nMostrar únicamente los números pares del 1 al 20.\r\nMostrar únicamente los números impares del 1 al 20.\r\nMostrar la palabra “Hola” 5 veces.\r\nMostrar los números del 1 al 10 junto con su cuadrado. Ejemplo: 3 → 9\r\nMostrar los números del 1 al 50 que sean múltiplos de 5.\r\nMostrar la suma de los números del 1 al 10.\r\nMostrar la suma de los números del 1 al 100.\r\nPedir un número al usuario y mostrar su tabla de multiplicar del 1 al 10.\r\nPedir un número y mostrar los números desde 1 hasta ese número.\r\nPedir un número y mostrar los números desde ese número hasta 1.\r\nPedir 3 números y mostrar la suma total.\r\nPedir 5 números y mostrar el promedio.\r\nPedir 5 números y mostrar cuántos son mayores que 10.\r\nPedir 5 números y mostrar cuántos son pares.\r\nPedir 5 números y mostrar el número mayor ingresado.\r\nPedir 5 números y mostrar el número menor ingresado.\r\nPedir una cantidad N de números e indicar cuántos son positivos.\r\nPedir una cantidad N de números e indicar cuántos son negativos.\r\nPedir N ventas e indicar el total vendido.\r\nPedir N notas y mostrar el promedio final.\r\nPedir N notas y mostrar si el promedio es aprobado (>=61) o reprobado.\r\nPedir un número y dibujar una escalera con asteriscos.");
+Console.WriteLine("////////////////////////");
 int opcion = int.Parse(Console.ReadLine());
 Console.WriteLine("");
 switch (opcion)
@@ -186,8 +187,22 @@ switch (opcion)
         }
         Console.WriteLine($"el numero mayor es: {numeromayor}");
         break;
+
         case 19:
-            break;
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese un numero");
+        double numeromenor = double.Parse(Console.ReadLine());
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado < numeromenor)
+            {
+                numeromenor = numeroingresado;
+            }
+        }
+        Console.WriteLine($"el numero menor es: {numeromenor}");
+        break;
         case 20:
             break;
         case 21:
