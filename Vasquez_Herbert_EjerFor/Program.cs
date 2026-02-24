@@ -239,9 +239,23 @@ switch (opcion)
         }
         Console.WriteLine($"la cantidad de numeros negativos son: : {numerosnegativos}");
         break;
+
         case 22:
-            break;
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese la cantidad de ventas");
+        int cantidadventas = int.Parse(Console.ReadLine());
+        double totalvendido = 0;
+        Console.WriteLine("//////");
+        for (int i = 1; i <= cantidadventas; i++)
+        {
+            Console.WriteLine("Ingrese el costo de la venta");
+            double venta = double.Parse(Console.ReadLine());
+            totalvendido += venta;
+        }
+        Console.WriteLine($"la cantidad de numeros negativos son: : {totalvendido}");
+        break;
         case 23:
+
             break;
         case 24:
             break;
