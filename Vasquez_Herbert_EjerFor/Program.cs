@@ -90,6 +90,14 @@ switch (opcion)
         Console.WriteLine(y);
         break;
     case 11:
+        Console.WriteLine("/////////");
+        Console.WriteLine("Ingrese un numero");
+        double numerroo = double.Parse(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine("");
+            Console.WriteLine(i*numerroo);
+        }
         break;
     case 12:
         break;
