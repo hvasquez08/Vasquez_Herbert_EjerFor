@@ -79,6 +79,15 @@ switch (opcion)
         Console.WriteLine(x);
         break;
     case 10:
+        //se aplico una nueva variable ya que la detectava xd
+        Console.WriteLine("//////");
+        int y = 0;
+        for (int i = 1; i <= 100; i++)
+        {
+            Console.WriteLine(i);
+            y = y + i;
+        }
+        Console.WriteLine(y);
         break;
     case 11:
         break;
