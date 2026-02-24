@@ -131,8 +131,18 @@ switch (opcion)
         }
         Console.WriteLine($"la suma es {z}");
         break;
-        case 15:
-            break;
+        case 15: //Pedir 5 números y mostrar el promedio.
+        Console.WriteLine("//////");
+        double xd = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Ingrese un numero");
+            double numerosuma = double.Parse(Console.ReadLine());
+            xd = xd + numerosuma;
+        }
+        Console.WriteLine($"el promedio es {xd/5}");
+        break;
         case 16:
             break;
         case 17:
