@@ -38,13 +38,19 @@ switch (opcion)
         }
         break;
     case 5:
-        Console.WriteLine("/////");
-        for (int i = 1; i<=5; i++)
+        Console.WriteLine("//////");
+        for (int i = 1; i <= 20; i += 2)
         {
-            Console.WriteLine("hola");
+            Console.WriteLine(i);
+            Console.WriteLine("");
         }
         break;
     case 6:
+        Console.WriteLine("/////");
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("hola");
+        }
         break;
     case 7:
         break;
