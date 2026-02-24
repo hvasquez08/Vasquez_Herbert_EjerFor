@@ -22,6 +22,12 @@ switch (opcion)
         }
         break;
     case 3:
+        Console.WriteLine("//////");
+        for (int i = 10; i >= 1; i--)
+        {
+            Console.WriteLine(i);
+            Console.WriteLine("");
+        }
         break;
     case 4:
         break;
