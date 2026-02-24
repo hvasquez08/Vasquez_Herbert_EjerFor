@@ -120,7 +120,17 @@ switch (opcion)
         }
         break;
         case 14:
-            break;
+        Console.WriteLine("//////");
+        double z = 0;
+        for (int i = 1; i <= 3; i++)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Ingrese un numero");
+            double numerosuma = double.Parse(Console.ReadLine());
+            z = z + numerosuma;
+        }
+        Console.WriteLine($"la suma es {z}");
+        break;
         case 15:
             break;
         case 16:
