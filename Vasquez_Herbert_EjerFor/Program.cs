@@ -6,7 +6,12 @@ int opcion = int.Parse(Console.ReadLine());
 switch (opcion)
 {
 	case 1:
-		break;
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine("");
+            Console.WriteLine(i);
+        }
+        break;
     case 2:
         break;
     case 3:
