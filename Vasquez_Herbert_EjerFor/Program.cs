@@ -144,7 +144,19 @@ switch (opcion)
         Console.WriteLine($"el promedio es {xd/5}");
         break;
         case 16:
-            break;
+        Console.WriteLine("//////");
+        int numerosmayores = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Ingrese un numero");
+            double numeroingresado = double.Parse(Console.ReadLine());
+            if (numeroingresado > 10)
+            {
+                numerosmayores++;
+            }
+        }
+        Console.WriteLine($"los numeros mayores son {numerosmayores}");
+        break;
         case 17:
             break;
         case 18:
