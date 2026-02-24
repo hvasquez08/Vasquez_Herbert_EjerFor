@@ -30,6 +30,12 @@ switch (opcion)
         }
         break;
     case 4:
+        Console.WriteLine("//////");
+        for (int i = 0; i <= 20; i+= 2)
+        {
+            Console.WriteLine(i);
+            Console.WriteLine("");
+        }
         break;
     case 5:
         break;
