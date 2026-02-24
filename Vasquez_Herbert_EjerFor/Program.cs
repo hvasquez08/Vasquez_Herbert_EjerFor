@@ -69,6 +69,14 @@ switch (opcion)
         }
         break;
     case 9:
+        Console.WriteLine("//////");
+        int x = 0;
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+            x = x+i;
+        }
+        Console.WriteLine(x);
         break;
     case 10:
         break;
