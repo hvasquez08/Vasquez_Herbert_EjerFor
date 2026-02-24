@@ -53,6 +53,12 @@ switch (opcion)
         }
         break;
     case 7:
+        Console.WriteLine("//////");
+        for (int i = 1; i <= 10; i ++)
+        {
+            Console.WriteLine($"Numero {i} su cuadrado {(i*i)}");
+            Console.WriteLine("");
+        }
         break;
     case 8:
         break;
