@@ -269,8 +269,29 @@ switch (opcion)
         }
         Console.WriteLine($"el promedio final es: {sumanotas/cantidadnotas}");
         break;
+
         case 24:
-            break;
+        Console.WriteLine("//////");
+        Console.WriteLine("Ingrese la cantidad de notas");
+        int cantidaddenotas = int.Parse(Console.ReadLine());
+        double sumanotass = 0;
+        Console.WriteLine("//////");
+        for (int i = 1; i <= cantidaddenotas; i++)
+        {
+            Console.WriteLine("Ingrese nota");
+            double notas = double.Parse(Console.ReadLine());
+            sumanotass += notas;
+        }
+        double promedio = sumanotass / cantidaddenotas;
+        if ( promedio >= 61)
+        {
+            Console.WriteLine("Aprobo felicidades");
+        }
+        else
+        {
+            Console.WriteLine("echele mas ganas malaso");
+        }
+        break;
         case 25:
             break;
     default:
