@@ -293,7 +293,19 @@ switch (opcion)
         }
         break;
         case 25:
-            break;
+        Console.WriteLine("/////");
+        Console.WriteLine("Ingrese el numero de asteriscos");
+        int asteriscos = int.Parse(Console.ReadLine());
+        Console.WriteLine("//////");
+        string asteriscossuma = "";
+        for (int i = 1; i <= asteriscos; i++)
+        {
+
+            asteriscossuma += "*";
+            Console.WriteLine(asteriscossuma);
+        }
+        break;
     default:
+        Console.WriteLine("Errorr");
 		break;
 }
